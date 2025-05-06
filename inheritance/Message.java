@@ -1,4 +1,4 @@
-public class Message {
+public abstract class Message {
     private String recipient;
 
     public String getRecipient() {
@@ -7,5 +7,9 @@ public class Message {
 
     public void setRecipient(String recipient) {
         this.recipient = recipient;
+    }
+
+    public abstract int getSize(String recipient){
+
     }
 }
