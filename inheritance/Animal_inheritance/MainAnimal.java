@@ -8,7 +8,7 @@ public class MainAnimal {
         Animal newCat = new Cat("jose"); // This is type animal, but is class Cat
 
         // Now call both MakeSound, which each object has it's own 'version' depending on which animal
-        newDog.MakeSound();
-        newCat.MakeSound();
+        newDog.MakeSound("Oscar");
+        newCat.MakeSound("jose");
     }
 }
