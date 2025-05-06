@@ -8,5 +8,8 @@ public class Dog extends Animal{
     }
 
     // Now the 'must contain' method
-    public abstract();
+    @Override // So @Override will change the behavior of the abstract class depending on the object (in this case is Dog)
+    public void MakeSound(String name){
+        System.out.printf("My Dog %s says Woof\n", name);
+    }
 }

@@ -7,7 +7,7 @@ public abstract class Animal{
     }
 
     // So this class will be override depending on the child
-    public abstract void MakeSound();
+    public abstract void MakeSound(String name);
     // For example, if the child is
 
     // Dog, it should make Woof
