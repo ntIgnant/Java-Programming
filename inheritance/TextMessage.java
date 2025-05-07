@@ -1,5 +1,5 @@
 public class TextMessage extends Message {
-    private String text;
+    public String text;
 
     public String getMessage(){
         return text;
@@ -10,8 +10,7 @@ public class TextMessage extends Message {
     }
 
     @Override
-    public abstract getSize(){
-        int txt_size = this.text.length();
-        return txt_size;
+    public int getSize(String text){
+        int size = text.length();
     }
 }

@@ -9,7 +9,6 @@ public abstract class Message {
         this.recipient = recipient;
     }
 
-    public abstract int getSize(){
-        return this.recipient.length();
-    }
+    // Method to be overriden
+    public abstract int getSize();
 }
