@@ -5,7 +5,7 @@ public class Calc {
     // Main function
     public static void main (String[] args){
 
-        System.out.prin("Please Enter a Number: ");
+        System.out.print("Please Enter a Number: ");
 
         // Create the Scanner object
         Scanner input = new Scanner(System.in);
@@ -14,19 +14,23 @@ public class Calc {
         System.out.print("Please enter another Number: ");
         int num2 = input.nextInt(); // Get th second number form the user | NOTE: nextInt() for int reading
 
-        // Close the scanner
-        input.close();
 
         // Now, once the two numbers were collected, prompt the user to decide the operation
         System.out.print("Please prompt an operation (+, -, *, /): ");
-        Scanner input = new Scanner(System.in);
         String userOp = input.nextLine(); // | NOTE: nextLine() for String reading
+
+        // Close the inputt
+        input.close();
+
+        // Set the value as 0 for the result of the clculation
+        int calcResult = 0;
 
         switch (userOp){
             case "+":
-                int calcResult = sumNums(num1, num2); // Get th result with the sum logic
+                calcResult = sumNums(num1, num2); // Get th result with the sum logic
                 break;
             default:
+                System.out.println("Oops, something went wrong...");
                 break;
         }
 
@@ -35,9 +39,9 @@ public class Calc {
         String strNum2 = Integer.toString(num2);
 
         // Convert the calc result to String for Output representation
-        String strCalcRes = Integer.toString();
+        String strCalcRes = Integer.toString(calcResult);
 
-        System.out.println("The result of " + strNum1 + userOp + strNum2 + " is " + );
+        System.out.println("The result of " + strNum1 + userOp + strNum2 + " is " + strCalcRes);
 
     }
 
