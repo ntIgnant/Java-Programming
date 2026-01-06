@@ -5,7 +5,8 @@ public class Triangle {
     private double height;
 
     // Create the builder of Triangle
-    public Triangle(){
-
+    public Triangle(boolean base, boolean height){
+        this.base = base;
+        this.height = height;
     }
 }
