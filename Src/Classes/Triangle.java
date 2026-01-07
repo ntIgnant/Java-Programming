@@ -1,8 +1,8 @@
 public class Triangle {
 
     // Class variables
-    private double base;
-    private double height;
+    public double base;
+    public double height;
 
     // Create the builder of Triangle
     public Triangle(double base, double height){
