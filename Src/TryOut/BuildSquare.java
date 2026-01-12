@@ -8,6 +8,7 @@ public class BuildSquare {
         Square sqr1 = new Square(5);
         Square sqr2 = new Square(10);
         Square sqr3 = new Square(3);
+	Square sqr4 = new Square(90);
 
         // Create and Add all the class instances (objects) to the arrayList
         ArrayList<Square> squares = new ArrayList<Square>();
@@ -21,7 +22,7 @@ public class BuildSquare {
 
 //        System.out.println("Square1 with side " + sqr1.side + " has area " + sqr1_area);
 
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 4; i++){
             System.out.println("Square" + i+1 + " with side " + squares.get(i) + " has area " + squares.get(i).getSquareArea());
         }
     }
