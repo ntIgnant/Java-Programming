@@ -11,4 +11,6 @@ public abstract class Message {
 
     // Method to be overriden
     public abstract int getSize();
+
+    public abstract int getSize(String text);
 }

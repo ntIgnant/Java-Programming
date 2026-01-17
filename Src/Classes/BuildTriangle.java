@@ -8,6 +8,6 @@ public class BuildTriangle {
 
 
 
-        System.out.println("Ttriangle A has Base " + triangleA.base + );
+        System.out.println("Ttriangle A has Base " + triangleA.base);
     }
 }

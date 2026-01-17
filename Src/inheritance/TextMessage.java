@@ -1,3 +1,5 @@
+package inheritance;
+
 public class TextMessage extends Message {
     public String text;
 
